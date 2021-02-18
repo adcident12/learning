@@ -392,5 +392,5 @@ function startInterval(id) {
             };
             document.getElementById("timeCurrentTime").innerHTML = `<i class="icon-history pe-2" style="display:revert;align-items:unset;"></i> ${(player_youtube[id].getCurrentTime() / 60).toFixed(2)} min.`;
         }
-    }, 1000)
+    }, 0)
 }
