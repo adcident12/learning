@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="embed-player.css" rel="stylesheet">
+    <link href="icon.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-md-center">
+            <!-- <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Form</h5>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control form-input required" id="floatingemail" placeholder="email" data-vld="email">
+                            <label for="floatingemail">Email</label>
+                            <div id="validationServeremail" class="valid-feedback"></div>
+                            <div id="invalidationServeremail" class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control form-input required" id="floatingpassword" placeholder="password" data-vld="password">
+                            <label for="floatingpassword">Password</label>
+                            <div id="validationServerpassword" class="valid-feedback"></div>
+                            <div id="invalidationServerpassword" class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control form-input required" placeholder="Leave a comment here" id="floatingcomments" data-vld="comments" style="height: 100px"></textarea>
+                            <label for="floatingcomments">Comments</label>
+                            <div id="validationServercomments" class="valid-feedback"></div>
+                            <div id="invalidationServercomments" class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control form-input required" id="floatingphone" placeholder="phone" data-vld="phone" onkeydown="return checkPhoneKey(event.key)">
+                            <label for="floatingphone">MobilePhone</label>
+                            <div id="validationServerphone" class="valid-feedback"></div>
+                            <div id="invalidationServerphone" class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select form-input required" id="floatingcolor" aria-label="Floating label select example" data-vld="color">
+                                <option value="">Choose</option>
+                                <option value="1">red</option>
+                                <option value="2">pink</option>
+                                <option value="3">blue</option>
+                            </select>
+                            <label for="floatingcolor">Color</label>
+                            <div id="validationServercolor" class="valid-feedback"></div>
+                            <div id="invalidationServercolor" class="invalid-feedback"></div>
+                        </div>
+                        <button id="submit" type="button" class="btn btn-outline-primary mt-3">Submit</button>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Youtube</h5>
+                        <div class="form-floating mb-4" data-iframe="iframe-youtube-0">
+                            <input type="text" class="form-control" id="url-youtube-label" placeholder="Url youtube">
+                            <label for="url-youtube-label">URL Youtube</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <div class="btn-group" role="group" aria-label="author" data-iframe="iframe-youtube-0">
+                                <label for="author" class="form-label ps-2" id="author">anonymous</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div class="btn-group" role="group" aria-label="Volume Tool" data-iframe="iframe-youtube-0">
+                                <input type="range" class="form-range" id="volume" value="0">
+                                <label for="volume" class="form-label ps-2" id="label-volume">0%</label>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-3" role="group" aria-label="Button Tool" data-iframe="iframe-youtube-0">
+                            <button type="button" class="btn btn-outline-primary" id="play"><i class="icon-play3"></i></button>
+                            <button type="button" class="btn btn-outline-primary" id="pause"><i class="icon-pause2"></i></button>
+                            <button type="button" class="btn btn-outline-primary" id="stop"><i class="icon-stop2"></i></button>
+                            <button type="button" class="btn btn-outline-primary" id="mute"><i class="icon-volume-mute2"></i></button>
+                            <button type="button" class="btn btn-outline-primary" id="unmute"><i class="icon-volume-mute"></i></button>
+                        </div>
+                        <div class="btn-group mb-3" role="group" aria-label="show Time">
+                            <button type="button" class="btn btn-primary" id="timeDuration"><i class="icon-clock pe-2" style="display:revert;align-items:unset;"></i> 0 min.</button>
+                            <button type="button" class="btn btn-primary" id="timeCurrentTime"><i class="icon-history pe-2" style="display:revert;align-items:unset;"></i> 0 min.</button>
+                        </div>
+                        <div class="video-youtube video-container" id="video-youtube-0" data-id="0">
+                            <iframe class="embed-player" id="iframe-youtube-0" width="100%" height="100%" data-src="https://www.youtube.com/embed/idOr2H0IqxA?enablejsapi=1&controls=0&loop=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ajax.js"></script>
+</body>
+</html>
